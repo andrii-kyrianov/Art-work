@@ -1,0 +1,104 @@
+.product-slider {
+    margin-bottom: 30px;
+    display: flex;
+    max-width: 600px;
+    @include tablet {
+        flex-direction: column-reverse;
+    }
+}
+
+
+.swiper-thumbs {
+    width: 80px;
+    height: 250px;
+    @include tablet {
+        order: 1;
+        height: 100px;
+        width: 300px;
+    }
+    @include mobile {
+        height: 80px;
+        width: 200px;
+    }
+}
+
+  
+.swiper-thumbs .swiper-slide {
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+  
+.swiper-thumbs .swiper-slide.swiper-slide-thumb-active {
+    opacity: 1;
+}
+  
+.swiper-focus {
+    flex-grow: 1;
+    max-width: 500px;
+    &__img{
+        -webkit-box-shadow: 0px 30px 43px -24px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 0px 30px 43px -24px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 30px 43px -24px rgba(0, 0, 0, 0.5);
+    }
+}
+  .swiper-vertical {
+    touch-action: pan-x;
+    margin: auto;
+}
+
+.product-slider__links{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.product-slider__link-viewe {
+    position: relative;
+    font-family: var(--font-main);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    color: var(--black);
+    &::before{
+        content: url(../img/viev_room.svg);
+        position: absolute;
+        top: 0;
+        left: -25px;
+    }
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.product-slider__link-share {
+    position: relative;
+    font-family: var(--font-main);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    color: var(--black);
+    &::before{
+        content: url(../img/Share.svg);
+        position: absolute;
+        top: 0;
+        left: -25px;
+    }
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+@media (max-width: 768px) {
+    .swiper-focus__img {
+        max-width: 80%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .swiper-focus__img {
+        max-width: 50%; 
+    }
+}
+
