@@ -1,0 +1,99 @@
+.main-swiper{
+    &__wrapper{
+        padding: 120px 0 43px;
+        @include tablet {
+            padding: 80px 0 15px;
+        }
+    }
+}
+
+.swiper-slide{
+    text-align: center;
+    &:hover{
+        .shop{
+            opacity: 1;
+            visibility: visible;
+            margin-top: 45px;
+        }
+    }
+
+    &__name{
+        padding: 10px 0 4px;
+        font-family: 'Optima LT Std Demi' sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;
+        color: var(--black);
+    }
+    &__autor{
+        margin-bottom: 4px;
+        font-family: 'Optima LT Std Demi' sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 114%;
+        color: var(--grey);
+        
+    }
+    &__date{
+
+        font-family: 'Optima LT Std Italic' sans-serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 114%;
+        color: var(--grey);
+    }
+
+}
+.shop{
+    opacity: 0;
+    visibility: hidden;       
+    transform: translateY(10px); 
+    transition: all 0.3s ease-in-out;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    
+    &__price{
+        padding-right: 10px;
+        font-family: var(--font-accent);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        color: var(--black);
+    }
+    &__share{
+        margin-right: 8px;
+        padding: 8px 10px;
+        background: var(--off-white);
+        transition: all 0.2s ease-in;
+        
+        &:hover{
+            background-color: #cfcfcf;
+        }
+    }
+    &__basket{
+        padding: 8px 10px;
+        background: var(--black);
+        transition: all 0.2s ease-in;
+        
+        &:hover{
+            background-color: #3a3a3a;
+        }
+    }
+    
+}
+
+.swiper-slide img{
+    margin: 0 auto;
+}
+
+@media (hover: none) and (pointer: coarse) {
+    .shop{
+        opacity: 1;
+        visibility: visible;
+        margin-top: 45px;
+    }
+}

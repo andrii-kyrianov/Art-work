@@ -1,0 +1,23 @@
+:root {
+	--container-width: 1260px;
+	--container-padding: 15px;
+
+	--font-main: "Optima LT Std Roman", sans-serif;
+	--font-accent: Karla, serif;
+
+	--off-white: #e7e7e1;
+	--white: #fff;
+	--black: #161412;
+	--grey: #65635f;
+	--link-color: #2578c8;
+
+
+    --laptop-size: 1199px;
+	--tablet-size: 959px;
+	--mobile-size: 599px;
+}
+
+.dark {
+    --page-bg: #252526;
+    --text-color: #fff;
+}

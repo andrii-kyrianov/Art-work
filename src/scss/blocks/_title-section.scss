@@ -1,0 +1,40 @@
+.title-section {
+    
+    &__content{
+        padding: 56px 104px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include tablet {
+            padding: 20px 50px;
+        }
+
+        @include mobile {
+            padding: 15px 20px; 
+        }
+    }
+
+    &__title {
+        max-width: 600px;
+        padding-right: 15px;
+        font-weight: 400;
+        font-size: 52px;
+        line-height: 108%;
+        color: var(--black);
+
+        @include tablet {
+            font-size: 40px;
+            line-height: 95%;
+        }
+
+        @include mobile {
+            font-size: 30px;
+            line-height: 85%;
+        }
+    }
+    &__link{
+        width: 70px;
+        
+    }
+}
