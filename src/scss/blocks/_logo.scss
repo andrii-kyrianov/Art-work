@@ -1,0 +1,20 @@
+.logo{
+    display: flex;
+    align-items: baseline;
+    @media (max-width: 500px) {
+		margin-bottom: auto;
+	}
+    &__text{
+        padding-right: 10px;
+        margin-left: 6px;
+        font-family: var(--font-accent);
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 140%;
+        text-transform: lowercase;
+        color: var(--black);
+        @include mobile {
+            font-size: 16px;
+        }
+    }   
+}
